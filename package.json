@@ -1,0 +1,17 @@
+{
+  "name": "foodbridge-root",
+  "version": "1.0.0",
+  "description": "FoodBridge — AI-Powered Food Waste Reduction and Redistribution Platform",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently -n \"SERVER,CLIENT\" -c \"blue,green\" \"npm --prefix server run dev\" \"npm --prefix client run dev\"",
+    "dev:server": "npm --prefix server run dev",
+    "dev:client": "npm --prefix client run dev",
+    "build:client": "npm --prefix client run build",
+    "build:server": "npm --prefix server run build",
+    "test": "npm --prefix server run test"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.5"
+  }
+}
